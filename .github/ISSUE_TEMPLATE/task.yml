@@ -1,0 +1,25 @@
+name: 작업 등록
+description: 버그, 개선, 문서 등 처리가 필요한 일을 등록합니다.
+labels: ["needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 무엇이 문제인가
+      description: 문제 하나만 적어주세요. 여러 건이면 이슈를 나눠서 등록해주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: 어디를 고쳐야 하나
+      description: 관련 파일이나 코드 위치를 알고 있다면 적어주세요.
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: 무엇이 되면 끝인가
+      description: 완료를 판단할 기준을 적어주세요.
+    validations:
+      required: false
